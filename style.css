@@ -122,3 +122,8 @@ body {
 .paused {
   animation-play-state: paused;
 }
+
+/* tilføjet fra øvelsen med den grønne firkant */
+.move-up {
+  translate: 0 -100%;
+}
