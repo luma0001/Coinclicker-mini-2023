@@ -11,7 +11,11 @@ function upstart() {
   document
     .querySelector("#coin1_container")
     .addEventListener("click", clickCoin);
-  console.log("yes");
+
+  document
+    .querySelector("#bomb_container")
+    .addEventListener("click", clickBomb);
+
   document
     .querySelector("#coin1_container")
     .addEventListener("animationend", next);
@@ -20,6 +24,11 @@ function upstart() {
 function clickCoin() {
   document.querySelector("#coin1_container").classList.add("paused");
   document.querySelector("#coin1_sprite").classList.add("zoom-out");
+}
+
+function clickBomb() {
+  document.querySelector("#bomb_container").classList.add("paused");
+  document.querySelector("#bomb_sprite").classList.add("zoom-in");
 }
 
 function next() {
@@ -31,4 +40,7 @@ function nextNext() {
   document.querySelector("#coin1_container").classList.remove("paused");
   document.querySelector("#coin1_sprite").classList.remove("zoom-out");
   document.querySelector("#coin1_container").classList.remove("move-up");
+
+  document.querySelector("#bomb_container").classList.remove("paused");
+  document.querySelector("#bomb_sprite").classList.remove("zoom-in");
 }
