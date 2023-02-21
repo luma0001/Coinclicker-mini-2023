@@ -25,5 +25,4 @@ function clickCoin() {
 function next() {
   document.querySelector("#coin1_sprite").classList.remove("zoom-out");
   document.querySelector("#coin1_container").classList.remove("paused");
-  document.querySelector("#coin1_container").classList.add("falling");
 }
