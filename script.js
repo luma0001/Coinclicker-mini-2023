@@ -1,5 +1,7 @@
 window.addEventListener("load", upstart);
 
+score = 0;
+
 function upstart() {
   console.log("yes");
 
